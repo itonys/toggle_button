@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SDB Animate</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/favicon.ico" />
+    <!-- layout -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/set.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <h1>
+          <a href="index.html"
+            ><img src="img/logo.svg" class="logo" alt=""
+          /></a>
+        </h1>
+      </div>
+    </header>
+
+    <div class="demo">
+      <div class="demo-container">
+        <div class="demo-warpper">
+          <div class="demo-menu">
+            <div class="menu-bg">
+              <h3>企業名で検索</h3>
+              <div class="search">
+                <input
+                  class="search-inline"
+                  type="text"
+                  placeholder="検索してください"
+                />
+                <span class="icon-search"
+                  ><img src="img/search.svg" alt=""
+                /></span>
+              </div>
+              <div class="line-bottom"></div>
+              <h4>ニュース一覧</h4>
+              <!-- <div class="toggle-switch">
+                <input type="checkbox" id="toggle" class="toggle-input" />
+                <label for="toggle" class="toggle-label">
+                  <span class="toggle-text-on">すべて</span>
+                  <span class="toggle-text-off">フォロー企業</span>
+                </label>
+              </div> -->
+              <div class="toggle2-switch">
+                <input
+                  type="radio"
+                  id="toggle1"
+                  name="toggle"
+                  class="toggle2-input"
+                  checked
+                />
+                <label for="toggle1" class="toggle2-label toggle2-label-left"
+                  >すべて</label
+                >
+
+                <input
+                  type="radio"
+                  id="toggle2"
+                  name="toggle"
+                  class="toggle2-input"
+                />
+                <label for="toggle2" class="toggle2-label toggle2-label-right"
+                  >フォロー企業</label
+                >
+              </div>
+            </div>
+            <div id="content" class="content">
+              <div class="txt">
+                <span>フォロー企業（1021社）</span>
+                <span class="reset"><a href="">リセット</a></span>
+              </div>
+              <ul class="list">
+                <li>
+                  <a href="">For Startups<span>321</span></a>
+                </li>
+                <li>
+                  <a href="">ABC Company<span>20</span></a>
+                </li>
+                <li>
+                  <a href="">Social Monster<span>10</span></a>
+                </li>
+                <li>
+                  <a href="">Cupang<span>7</span></a>
+                </li>
+                <li>
+                  <a href="">Risgiter trends<span>5</span></a>
+                </li>
+                <li>
+                  <a href="">TTTXXX<span>3</span></a>
+                </li>
+                <li>
+                  <a href="">Like or dislike<span>11</span></a>
+                </li>
+                <li>
+                  <a href="">sample<span>2</span></a>
+                </li>
+                <li>
+                  <a href="">XXXXXXX<span>30</span></a>
+                </li>
+                <li>
+                  <a href="">memomeomo<span>3</span></a>
+                </li>
+                <li>
+                  <a href="">ABC Company<span>20</span></a>
+                </li>
+                <li>
+                  <a href="">Social Monster<span>10</span></a>
+                </li>
+                <li>
+                  <a href="">Cupang<span>7</span></a>
+                </li>
+                <li>
+                  <a href="">Risgiter trends<span>5</span></a>
+                </li>
+                <li>
+                  <a href="">TTTXXX<span>3</span></a>
+                </li>
+                <li>
+                  <a href="">Like or dislike<span>11</span></a>
+                </li>
+                <li>
+                  <a href="">sample<span>2</span></a>
+                </li>
+                <li>
+                  <a href="">XXXXXXX<span>30</span></a>
+                </li>
+                <li>
+                  <a href="">memomeomo<span>3</span></a>
+                </li>
+                <li>
+                  <a href="">ABC Company<span>20</span></a>
+                </li>
+                <li>
+                  <a href="">Social Monster<span>10</span></a>
+                </li>
+                <li>
+                  <a href="">Cupang<span>7</span></a>
+                </li>
+                <li>
+                  <a href="">Risgiter trends<span>5</span></a>
+                </li>
+                <li>
+                  <a href="">TTTXXX<span>3</span></a>
+                </li>
+                <li>
+                  <a href="">Like or dislike<span>11</span></a>
+                </li>
+                <li>
+                  <a href="">sample<span>2</span></a>
+                </li>
+                <li>
+                  <a href="">XXXXXXX<span>30</span></a>
+                </li>
+                <li>
+                  <a href="">memomeomo<span>3</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="demo-animate">
+            <div class="animate-bg">
+              <div class="animate-layout">
+                <div class="animate-container">
+                  <div class="info-area"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggleSwitch = document.getElementById('toggle');
+      const content = document.getElementById('content');
+
+      toggleSwitch.addEventListener('change', function () {
+        if (toggleSwitch.checked) {
+          content.style.display = 'block';
+        } else {
+          content.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
